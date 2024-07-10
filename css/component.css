@@ -1,0 +1,222 @@
+header h1 {
+    text-align: center;
+}
+
+.button {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.button a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #DDF2FD;
+    transition: 200ms;
+}
+
+.button a:hover {
+    background-color: skyblue;
+}
+
+#main-page {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    gap: 20px;
+}
+
+nav {
+    flex: 0 1 200px;
+    height: min-content;
+    position: sticky;
+    top: 100px;
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 3;
+    color: skyblue;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: skyblue;
+}
+
+main {
+    flex: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 20px;
+    grid-auto-flow: row;
+
+}
+
+.card {
+    position: relative;
+    background-color: #DDF2FD;
+    padding: 20px;
+    transition: 500ms;
+}
+
+.card:hover {
+    background-color: skyblue;
+}
+
+.card img {
+    height: 60%;
+}
+
+.card a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.post-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 2;
+    justify-content: center;
+    padding: 0 50px;
+
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.post-paragraph {
+    text-align: left;
+}
+
+.post-image {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+.subscribe-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subscribe-email label {
+    width: 300px;
+    text-align: center;
+}
+
+.subscribe-email label input {
+    width: 100%;
+    height: 100%;
+}
+
+.social-media {
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+
+}
+
+
+@media (max-width: 600px) {
+    #main-page {
+        flex-direction: column;
+
+    }
+
+    nav {
+        display: none;
+        flex: auto;
+        top: 45px;
+    }
+
+
+    nav li {
+        font-size: 15px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .button {
+        flex-direction: row;
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .button a {
+        font-size: 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .post-page {
+        padding: 0 15px;
+    }
+
+    .subscribe-email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .subscribe-email label {
+        width: 70%;
+        height: 30px;
+    }
+}

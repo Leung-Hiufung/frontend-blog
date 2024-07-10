@@ -1,0 +1,44 @@
+h1 {
+    font-family: Montserrat;
+    line-height: 0;
+}
+
+h2 {
+    font-family: Montserrat;
+    line-height: 0;
+}
+
+h3 {
+    font-family: Montserrat;
+    line-height: 0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat;
+}
+
+li {
+    font-family: Montserrat;
+}
+
+figcaption {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 0;
+}
+
+button {
+    font-family: Montserrat;
+}
+
+input {
+    font-family: Montserrat;
+}
